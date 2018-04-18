@@ -27,5 +27,17 @@ namespace C_18_01_Capstone.Web.Controllers
         {
           return "Logged in!";
         }
+
+        [HttpGet]
+        public ActionResult SignUp()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public string SignUp(SignUpViewModel signUpViewModel)
+        {
+            return "You are registered successfully!";
+        }
     }
 }

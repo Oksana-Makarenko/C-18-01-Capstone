@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
 namespace C_18_01_Capstone.Web
@@ -12,7 +8,13 @@ namespace C_18_01_Capstone.Web
         public static void RegisterRoutes(RouteCollection routes)
         {
       
-            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");    
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                    name: "UserSignUp",
+                    url: "{controller}/{action}",
+                    defaults: new { controller = "User", action = "SignUp"}
+            );
 
             routes.MapRoute(
                     name: "Default",
