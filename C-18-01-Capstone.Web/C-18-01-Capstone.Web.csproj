@@ -9,7 +9,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{28C0061B-F519-4932-891A-8114DC388CDF}</ProjectGuid>
+    <ProjectGuid>{9E790EC2-C108-4C13-BE72-08FFC5BD60C4}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -121,12 +122,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <None Include="HostConfig\ConnectionStrings.config.example" />
     <Content Include="fonts\font-awesome-4.2.0\fonts\fontawesome-webfont.eot" />
     <Content Include="fonts\font-awesome-4.2.0\fonts\fontawesome-webfont.ttf" />
     <Content Include="fonts\font-awesome-4.2.0\fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\font-awesome-4.2.0\fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\font-awesome-4.2.0\fonts\FontAwesome.otf" />
     <None Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <None Include="HostConfig\ConnectionStrings.config" />
     <Content Include="image\login-bg-960x960.jpg" />
     <Content Include="image\login-bg.jpg" />
     <Content Include="image\logo.png" />
@@ -161,10 +164,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
